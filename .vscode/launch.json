@@ -1,0 +1,60 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch lldb",
+            "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+
+
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Executable LLDB Debug Launch",
+        //     "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
+        //     "args": [],
+        //     "cwd": "${workspaceFolder}",
+        //     // "cwd": "${fileDirname}",
+        // },
+        {
+            "name": "Executable Debug (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
+            "args": [
+                "--hello"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Externally launched",
+            "cmakeDebugType": "external",
+            "pipeName": "<...>"
+        }
+    ]
+}
