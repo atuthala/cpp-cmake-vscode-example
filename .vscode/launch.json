@@ -5,15 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch lldb",
             "type": "lldb",
             "request": "launch",
-            "name": "Launch lldb",
             "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "ASAN_OPTIONS": "detect_leaks=0"
+            }
         },
-
-
         // {
         //     "type": "lldb",
         //     "request": "launch",
