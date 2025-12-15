@@ -13,14 +13,14 @@ int main()
         std::cout << item << ' ';
     }
     std::cout << std::endl;
-    std::cout << "Привет Саша! :)" << std::endl;
-    std::cout << "Ого-го!\n"; 
+    std::cout << "hello matheusgomes28 :)" << std::endl;
+    std::cout << "Lol!\n"; 
 
     library::say_hello();
     fmt::println("Hello from the executable");
 
-    std::cout << "Enter number2: \n";
-    std::string number{"14/08/1986"};
-    // std::cin >> number;
-    std::cout << "Our number is: " << number << std::endl;
+    std::cout << "Enter text: ";
+    std::string text{"Dec 15 2025"};
+    getline(std::cin, text);
+    std::cout << "Our number is: " << text << std::endl;
 }

@@ -11,16 +11,17 @@
     // "--pch-storage=memory"
   ],
   
-  // Отключаем Microsoft IntelliSense
+  // Disabling Microsoft IntelliSense
   "C_Cpp.intelliSenseEngine": "disabled",
 
-  // Форматирование
+  // Formatting
   // "editor.formatOnSave": true,
+
   // CMake
   "cmake.configureOnOpen": true,
   "cmake.buildDirectory": "${workspaceFolder}/build/clang-deb-ninja",
 
-  // (важно) отключаем fallback
-  "C_Cpp.autocomplete": "disabled",
-  "C_Cpp.errorSquiggles": "disabled",
+  // (important) disable fallback
+  // "C_Cpp.autocomplete": "disabled",
+  // "C_Cpp.errorSquiggles": "disabled",
 }

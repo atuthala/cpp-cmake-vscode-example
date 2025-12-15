@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch lldb",
+            "name": "Executable LLDB Debug Launch",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
@@ -16,15 +16,6 @@
                 "ASAN_OPTIONS": "detect_leaks=0"
             }
         },
-        // {
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "name": "Executable LLDB Debug Launch",
-        //     "program": "${workspaceFolder}/build/clang-deb-ninja/src/executable/executable",
-        //     "args": [],
-        //     "cwd": "${workspaceFolder}",
-        //     // "cwd": "${fileDirname}",
-        // },
         {
             "name": "Executable Debug (gdb) Launch",
             "type": "cppdbg",
